@@ -1,0 +1,19 @@
+{
+  "name": "suitescript-ts-template",
+  "version": "0.0.1",
+  "private": true,
+  "description": "SuiteScript TypeScript template",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf FileCabinet/SuiteApps/com.netsuite.bundlename/dist/compiled rimraf dist/",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "author": "netsuiteAuthor",
+  "license": "ISC",
+  "devDependencies": {    
+    "@hitc/netsuite-types": "^2019.2.5",    
+    "rimraf": "^2.6.3",    
+    "tslint": "5.18.0",
+    "typescript": "^3.7.2"
+  }
+}
